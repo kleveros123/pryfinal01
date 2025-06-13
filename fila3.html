@@ -3,10 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Fila 3</title>
+    <title>GitHub - Información</title>
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo y fuente */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Contenedor general */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Estilo para las secciones */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        section ul li a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola desde la rama fila3</h1>
-    <p>Esta es una página de ejemplo en la rama fila3.</p>
+    <header>
+        <div class="container">
+            <h1>Bienvenido a la Página sobre GitHub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introducción</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#uso">Cómo usar GitHub</a></li>
+                    <li><a href="#recursos">Recursos útiles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="intro">
+            <h2>¿Qué es GitHub?</h2>
+            <p>GitHub es una plataforma de desarrollo colaborativo que permite alojar proyectos de software y colaborar con otros desarrolladores mediante el uso de Git. Es muy utilizada en el mundo del desarrollo de software para gestionar código fuente, realizar seguimiento de cambios y mantener un control de versiones.</p>
+        </section>
+
+        <section id="caracteristicas">
+            <h2>Características principales</h2>
+            <ul>
+                <li>Control de versiones con Git.</li>
+                <li>Repositorios públicos y privados.</li>
+                <li>Gestión de incidencias (issues) y solicitudes de extracción (pull requests).</li>
+                <li>Colaboración en tiempo real.</li>
+                <li>Integración con herramientas de CI/CD.</li>
+            </ul>
+        </section>
+
+        <section id="uso">
+            <h2>Cómo usar GitHub</h2>
+            <p>Para comenzar a usar GitHub, primero necesitas crear una cuenta en su sitio web. Una vez que tengas tu cuenta, puedes crear un repositorio para almacenar tu código fuente. Además, puedes colaborar con otros usuarios mediante la creación de ramas (branches) y solicitudes de extracción (pull requests).</p>
+            <p>GitHub también te permite realizar un seguimiento de los cambios realizados en el código mediante el uso de commits y ramas.</p>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos útiles</h2>
+            <ul>
+                <li><a href="https://github.com" target="_blank">Sitio oficial de GitHub</a></li>
+                <li><a href="https://guides.github.com" target="_blank">Guías de GitHub</a></li>
+                <li><a href="https://git-scm.com/doc" target="_blank">Documentación de Git</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Página informativa sobre GitHub</p>
+    </footer>
 </body>
 </html>
