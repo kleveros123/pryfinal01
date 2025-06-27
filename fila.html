@@ -3,12 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fila 1</title>
+    <title>Fila 1, Comandos Usados en Git</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-left: 6px solid #ff7eb3;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        ul li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        ul li:nth-child(odd) {
+            background: #f0f0f0;
+        }
+        ul li::before {
+            content: '\25BA'; /* Unicode for a right arrow */
+            margin-right: 10px;
+            color: #ff758c;
+        }
+        code {
+            background: #eef;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
-    
-
-
-    
+    <header>
+        <h1>Lista de Comandos Usados en Git</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Comandos Básicos de Navegación</h2>
+            <ul>
+                <li><code>pwd</code>: Muestra el directorio actual.</li>
+                <li><code>cd [ruta]</code>: Cambia al directorio especificado.</li>
+                <li><code>ls</code>: Lista los archivos y directorios del directorio actual.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Comandos para Manipulación de Archivos</h2>
+            <ul>
+                <li><code>touch [archivo]</code>: Crea un archivo vacío.</li>
+                <li><code>echo "texto" > [archivo]</code>: Escribe texto en un archivo (sobrescribe).</li>
+                <li><code>echo "texto" >> [archivo]</code>: Añade texto al final de un archivo.</li>
+                <li><code>cp [origen] [destino]</code>: Copia un archivo.</li>
+                <li><code>mv [origen] [destino]</code>: Mueve o renombra un archivo.</li>
+                <li><code>rm [archivo]</code>: Elimina un archivo.</li>
+                <li><code>mkdir [directorio]</code>: Crea un nuevo directorio.</li>
+                <li><code>rmdir [directorio]</code>: Elimina un directorio vacío.</li>
+                <li><code>rm -rf [directorio]</code>: Elimina un directorio y su contenido.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Comandos de Git</h2>
+            <ul>
+                <li><code>git init</code>: Inicializa un repositorio Git en el directorio actual.</li>
+                <li><code>git status</code>: Muestra el estado actual del repositorio.</li>
+                <li><code>git add [archivo]</code>: Añade un archivo al área de preparación.</li>
+                <li><code>git add .</code>: Añade todos los archivos al área de preparación.</li>
+                <li><code>git commit -m "mensaje"</code>: Crea un commit con un mensaje descriptivo.</li>
+                <li><code>git branch [nombre]</code>: Crea una nueva rama.</li>
+                <li><code>git switch [rama]</code>: Cambia a la rama especificada.</li>
+                <li><code>git log</code>: Muestra el historial de commits.</li>
+                <li><code>git clone [url]</code>: Clona un repositorio remoto.
+                </li>
+                <li><code>git push -u origin [rama]</code>: Sube los cambios de la rama local al repositorio remoto.
+                </li>
+                <li><code>git config --global user.name "Nombre"</code>: Configura el nombre de usuario global para Git.</li>
+                <li><code>git config --global user.email "correo@example.com"</code>: Configura el correo electrónico global para Git.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Otros Comandos Útiles</h2>
+            <ul>
+                <li><code>code .</code>: Abre el directorio actual en Visual Studio Code.</li>
+                <li><code>cat [archivo]</code>: Muestra el contenido de un archivo en la terminal.</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
